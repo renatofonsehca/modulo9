@@ -24,3 +24,7 @@ div ul li{
     cursor: pointer;
 }
 
+.check{
+    text-decoration: line-through;
+}
+

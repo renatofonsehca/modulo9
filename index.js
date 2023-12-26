@@ -10,15 +10,13 @@ $(document).ready(function(){
         $(novoItem).appendTo('ul');
         $('#tarefa').val('');
     })
-        $(novoItem).on('click', function(){
-            $(novoItem).css({'text-decoration': 'line-through'});
+        $('ul').on('click', function(e){
+            if (e.target.classList.contains('check')){
+                e.target.classList.remove('check');
+            }else{
+                e.target.classList.add('check');
+            }
         })
-        
-    
-    function toggleRiscado() {
-        $(event.target).toggleClass('riscado');
-    }
-    
     
     
 })
